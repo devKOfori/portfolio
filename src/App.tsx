@@ -1,14 +1,18 @@
 import { useState } from 'react'
+import Navbar from './components/Navbar';
+import CareerAspiration from './components/CareerAspiration';
 
-import './App.css'
 
 function App() {
 
   return (
     <>
-      <h1>Portfolio</h1>
+      <div className="container border border-danger min-vh-100">
+        <Navbar />
+        <CareerAspiration />
+      </div>
     </>
-  )
+  );
 }
 
 export default App
