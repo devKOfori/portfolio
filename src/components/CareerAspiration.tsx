@@ -1,5 +1,9 @@
 import React from "react";
 
+import val_acc_32 from "../assets/val_acc_32.jpg";
+import val_acc_64 from "../assets/val_acc_64.jpg";
+import val_acc_128 from "../assets/val_acc_128.jpg";
+
 const CareerAspiration = () => {
   return (
     <div className="row border border-primary p-2">
@@ -69,7 +73,77 @@ const CareerAspiration = () => {
             data-bs-parent="#portfolio-accordion"
           >
             <div className="accordion-body fw-light p-5">
-              <p>Thesis Abstract</p>
+              <h6>Title:</h6>
+              <h4 className="fw-light">
+                Leveraging Deep Learning Models for Beef Quality Assessment-A
+                Comparative Study of CNN and ResNet Architecture
+              </h4>
+              <h6>Abstract:</h6>
+              <p>
+                Beef quality assessment is an important process in beef
+                production that ensures food safety and plays a critical role in
+                promoting consumer satisfaction. With the huge demand for beef
+                products all over the world, the need for fast, accurate,
+                efficient, and scalable beef quality assessment methods has
+                become more profound. However, traditional methods for assessing
+                qualities, like freshness, depend on physical inspection by
+                trained assessors which have proven to be error-prone,
+                ineffective and time-consuming. This research explored and
+                compared the performance of two deep learning models,
+                specifically, a conventional Convolutional Neural Network (CNN)
+                and a Residual Neural Network (ResNet), as methods for beef
+                quality assessment. The two models were trained using a dataset
+                that contains fresh and spoiled beef images. The input images
+                were preprocessed into suitable inputs for the models. We
+                employed several performance evaluations metrics including
+                accuracy, precision, recall, and F1-Score to determine the
+                efficacy of each model. Additionally, we measured the training
+                and inference times of both models to assess how efficient they
+                performed. Our findings revealed that the models demonstrate
+                excellent capabilities to distinguish between fresh and spoiled
+                beef images. The conventional CNN model achieved a validation
+                accuracy of 100% when the batch size was set at 64. The
+                ResNet-18 model on the other hand, achieved a validation
+                accuracy of 100% when the batch size was set at 32. The
+                class-wise evaluation of the two models’ performance revealed a
+                precision score of 1 for the CNN and 0.9 for the ResNet-18
+                model. The two models achieve a score of 0.9 for recall and
+                F1-Score. Our results further revealed that training the
+                ResNet-18 model is 2.3 minutes faster compared to training the
+                conventional CNN model.
+              </p>
+              <h6>Validation Accuracy Graph with Different Batch Sizes</h6>
+              <div className="row">
+                <div className="col col-12 col-md-4 mb-3">
+                  <img
+                    className="img-fluid img-thumbnail"
+                    src={val_acc_32}
+                    alt="logo"
+                  />
+                </div>
+                <div className="col col-12 col-md-4 mb-3">
+                  <img
+                    className="img-fluid img-thumbnail"
+                    src={val_acc_64}
+                    alt="logo"
+                  />
+                </div>
+                <div className="col col-12 col-md-4 mb-3">
+                  <img
+                    className="img-fluid img-thumbnail"
+                    src={val_acc_128}
+                    alt="logo"
+                  />
+                </div>
+              </div>
+              <div>
+                <a
+                  href="https://erepo.uef.fi/server/api/core/bitstreams/c308e30d-e049-4f20-87bd-b4d4dad476c4/content"
+                  target="_blank"
+                >
+                  <button className="btn btn-dark">Read Full Document</button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
