@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <div className="container border border-danger min-vh-100">
+      <div className="container border min-vh-100 bg-white rounded ">
         <Navbar />
         <CareerAspiration />
       </div>

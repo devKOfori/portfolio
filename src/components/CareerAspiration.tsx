@@ -6,7 +6,7 @@ import val_acc_128 from "../assets/val_acc_128.jpg";
 
 const CareerAspiration = () => {
   return (
-    <div className="row border border-primary p-2">
+    <div className="row border pt-5">
       <div className="accordion accordion-flush" id="portfolio-accordion">
         <div className="accordion-item">
           <h2 className="accordion-header">

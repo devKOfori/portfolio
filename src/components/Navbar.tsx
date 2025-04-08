@@ -7,7 +7,7 @@ import './Navbar.css'
 const Navbar = () => {
   return (
     <>
-      <div className="row border border-primary bg-secondary-subtle p-2">
+      <div className="row bg-secondary-subtle p-2 rounded-top">
         <div className="col-12 col-sm-2 d-flex justify-content-center">
           <img
             height="150px"
